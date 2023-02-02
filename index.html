@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ------------------------ FAVICON ---------------------------- -->
+    <link rel="shortcut icon" href="./assets/img/icon.png" type="image/x-icon">
+
+    <!-- ------------------------ CSS ---------------------------- -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+
+
+    <title> My Drawing Board  </title>
+</head>
+
+<body>
+
+    <!-- ===================  HAMBURGER MENU ====================== -->
+
+    <div class="options__container">
+        <i class="fa-sharp fa-solid fa-bars"></i>
+    </div>
+
+    <!-- ===================  TOOLS CONTAINER ====================== -->
+
+    <div class="tools__container scale__tools">
+        <div class="tools__image">
+            <img src="./assets/img/pen.png" alt="No icon" title="draw">
+        </div>
+        <div class="tools__image">
+            <img src="./assets/img/eraser.png" alt="No icon" title="Erase">
+        </div>
+        <div class="tools__image" id="leser__pen">
+            <img src="./assets/img/laser_pen.png"  alt="No icon" title="Leser Pen">
+        </div>
+        <div class="tools__image" id="download">
+            <img src="./assets/img/download.png" alt="No icon" title="Download">
+        </div>
+        <div class="tools__image">
+            <img src="./assets/img/upload.png" alt="No icon" title="Upload">
+        </div>
+        <div class="tools__image">
+            <img src="./assets/img/sticky.png" alt="No icon" title="Sticky Note">
+        </div>
+
+        <div class="tools__image" id="undo">
+            <img src="./assets/img/undo.png" alt="No icon" title="UNDo">
+        </div>
+        <div class="tools__image" id="redo">
+            <img src="./assets/img/redo.png" alt="No icon" title="ReDo">
+        </div>
+     
+    </div>
+
+
+    <!-- =================== PEN TOOL ====================== -->
+    <div class="pen__tool__container">
+        <div class="pen__width__container">
+            <input type="range" min="2" max="20" value="3" id="pen-size" title="Pen size">
+        </div>
+        <div class="pen__color__container">
+            <!-- <div class="white pen__color">W</div>
+            <div class="red pen__color">r</div>
+            <div class="greenyellow pen__color">g</div>
+            <div class="yellow pen__color">y</div> -->
+            <input type="color" class="pen__color" id="pen-color"   title="choose pen color">
+        </div>
+    </div>
+
+    <!-- =================== ERASER TOOL ====================== -->
+
+    <div class="eraser__tool__container">
+        <input type="range" class="eraser" id="eraser-size" min="2" max="35" value="3" title="Eraser Size">
+    </div>
+
+    <!-- ----------------- REFRESH PAGE ------------------ -->
+    <div class="refresh__image" id="refresh">
+        <img src="./assets/img/refresh.png" alt="No icon" title="Refresh page">
+    </div>
+
+
+    <!-- =================== STICKY NOTES ====================== -->
+
+    <!-- <div class="sticky__container">
+        <div class="header__container">
+            <div class="minimize"></div>
+            <div class="remove"></div>
+        </div>
+        <div class="note__container">
+            <textarea></textarea>
+        </div>
+    </div> -->
+
+
+    <!-- --------------------- CANVAS ------------------ -->
+    <canvas></canvas>
+
+
+
+    <!-- ================== FONT ASWOM ========================= -->
+    <script src="https://kit.fontawesome.com/ab9bc260f6.js" crossorigin="anonymous"></script>
+
+    <!-- ----------------------- Script ----------------- -->
+    <script src="./assets/js/tools.js"></script>
+    <script src="./assets/js/imgupload.js"></script>
+    <script src="./assets/js/canvas.js"></script>
+    <script src="./assets/js/pagerefresh.js"></script>
+    
+    
+
+    <!-- #ff0000 -->
+   
+
+</body>
+
+</html>
